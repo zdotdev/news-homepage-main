@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#navlist.active{
+    right: calc(-12rem + 12rem);
+}
+#cover.active{
+    display: flex;
+}

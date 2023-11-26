@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="font-Inter text-15 text-Very-dark-blue-0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex flex-col p-4 xl:p-16">
+  <div class="fixed hidden top-0 left-0 h-screen w-screen bg-Dark-grayish-blueV2-0" id="cover"></div>
+  <nav class="flex justify-between">
+    <img src="assets/images/logo.svg" alt="Logo Img" class="h-10 w-16">
+    <a href="#"><img src="assets/images/icon-menu.svg" alt="icon-menu.svg" id="menu-open" class="lg:hidden"></a>
+    <ul class="hidden xl:flex items-center gap-4">
+      <li><a href="#" class="hover:text-Soft-red-0 duration-300">Home</a></li>
+      <li><a href="#" class="hover:text-Soft-red-0 duration-300">New</a></li>
+      <li><a href="#" class="hover:text-Soft-red-0 duration-300">Popular</a></li>
+      <li><a href="#" class="hover:text-Soft-red-0 duration-300">Trending</a></li>
+      <li><a href="#" class="hover:text-Soft-red-0 duration-300">Categories</a></li>
+    </ul>
+  </nav>
+  <div class="fixed top-0 -right-48  h-screen w-1/2 bg-Off-White-0 p-4 duration-300 xl:hidden" id="navlist">
+    <ul class="flex flex-col gap-10" >
+      <a href="#" class="flex self-end"><img src="assets/images/icon-menu-close.svg" alt="icon-menu-close.svg" class="w-10 h-10" id="menu-close"></a>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Categories</a></li>
+    </ul>
+  </div>
+  <div class="xl:flex xl:my-16 gap-8">
+  <section class="xl:flex xl:flex-col xl:h-fit">
+    <img src="assets/images/image-web-3-mobile.jpg" alt="image-web-3-mobile.jpg" class="mt-4 mb-4 xl:hidden">
+    <img src="assets/images/image-web-3-desktop.jpg" alt="image-web-3-desktop.jpg" class="hidden xl:flex mb-4 xl:mt-0">
+    <div class="flex flex-col gap-4 mt-4 mb-4 xl:flex-row">
+      <h1 class="font-extrabold text-5xl">The Bright Future of Web 3.0?</h1>
+      <div class="flex flex-col gap-4">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?</p>
+        <a href="https://github.com/zdotdev" class="bg-Soft-red-0 px-8 py-2 w-fit text-Off-White-0 xl:hover:bg-Very-dark-blue-0 duration-300">Read more</a>
+      </div>
+    </div>
+  </section>
+  <section class="bg-Very-dark-blue-0 text-Off-White-0 px-2 pt-2 xl:flex xl:flex-col xl:justify-evenly xl:px-8 xl:py-8">
+    <h2 class="text-Soft-orange-0 font-bold text-3xl">New</h2>
+    <div class="py-4 border-solid border-b-1"> 
+      <a href="#" class="font-bold text-xl xl:hover:text-Soft-orange-0 duration-300">Hydrogen VS Electric Cars</a> 
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </div>
+    <div class="py-4 border-solid border-b-1">
+      <a href="#" class="font-bold text-xl xl:hover:text-Soft-orange-0 duration-300">The Downsides of AI Artistry</a>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    </div>
+    <div class="py-4">
+      <a href="#" class="font-bold text-xl xl:hover:text-Soft-orange-0 duration-300">Is VC Funding Drying Up?</a>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </section>
+  </div>
+  <section class="flex flex-col gap-8 my-4 xl:flex-row xl:mb-8 xl:justify-between">
+    <div class="flex gap-4">
+      <img src="assets/images/image-retro-pcs.jpg" alt="image-retro-pcs.jpg" class="w-32 h-auto">
+      <div class="flex flex-col gap-4 justify-center">
+        <h2 class="text-Grayish-blue-0 text-3xl font-bold">01</h2>
+        <a href="#" class="font-bold xl:hover:text-Soft-red-0 duration-300">Reviving Retro PCs</a>
+        <p class="text-Dark-grayish-blue-0">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="flex gap-4">
+      <img src="assets/images/image-top-laptops.jpg" alt="image-top-laptops.jpg" class="w-32 h-auto">
+      <div class="flex flex-col gap-4 justify-center">
+        <h2 class="text-Grayish-blue-0 text-3xl font-bold">02</h2>
+        <a href="#" class="font-bold xl:hover:text-Soft-red-0 duration-300">Top 10 Laptops of 2022</a> 
+        <p class="text-Dark-grayish-blue-0">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="flex gap-4">
+      <img src="assets/images/image-gaming-growth.jpg" alt="image-gaming-growth.jpg" class="w-32 h-auto">
+      <div class="flex flex-col gap-4 justify-center">
+        <h2 class="text-Grayish-blue-0 text-3xl font-bold">03</h2>
+        <a href="#" class="font-bold xl:hover:text-Soft-red-0 duration-300">The Growth of Gaming</a>
+        <p class="text-Dark-grayish-blue-0">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/zdotdev">Zedrick M. Ragas</a>.
+  </div>
+  <script src="src/JS/main.js"></script>
+</body>
+</html>
